@@ -1,5 +1,7 @@
 package com.milu.crm.pojo;
 
+import org.apache.ibatis.type.Alias;
+import org.springframework.stereotype.Component;
 
 public class User {
 
@@ -13,7 +15,6 @@ public class User {
   private long groupId;
   private long isLogin;
 
-
   public long getUserId() {
     return userId;
   }
@@ -21,7 +22,6 @@ public class User {
   public void setUserId(long userId) {
     this.userId = userId;
   }
-
 
   public String getUserName() {
     return userName;
@@ -31,7 +31,6 @@ public class User {
     this.userName = userName;
   }
 
-
   public String getPassword() {
     return password;
   }
@@ -39,7 +38,6 @@ public class User {
   public void setPassword(String password) {
     this.password = password;
   }
-
 
   public String getPhoneNumber() {
     return phoneNumber;
@@ -49,7 +47,6 @@ public class User {
     this.phoneNumber = phoneNumber;
   }
 
-
   public String getPinyin() {
     return pinyin;
   }
@@ -57,7 +54,6 @@ public class User {
   public void setPinyin(String pinyin) {
     this.pinyin = pinyin;
   }
-
 
   public long getStatus() {
     return status;
@@ -67,7 +63,6 @@ public class User {
     this.status = status;
   }
 
-
   public long getRoleId() {
     return roleId;
   }
@@ -76,7 +71,6 @@ public class User {
     this.roleId = roleId;
   }
 
-
   public long getGroupId() {
     return groupId;
   }
@@ -84,7 +78,6 @@ public class User {
   public void setGroupId(long groupId) {
     this.groupId = groupId;
   }
-
 
   public long getIsLogin() {
     return isLogin;

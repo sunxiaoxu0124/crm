@@ -1,13 +1,13 @@
 package com.milu.crm.pojo;
 
-
+import org.apache.ibatis.type.Alias;
+@Alias("Menu")
 public class Menu {
 
   private long menuId;
   private String menuName;
   private String url;
   private String operate;
-
 
   public long getMenuId() {
     return menuId;
@@ -17,7 +17,6 @@ public class Menu {
     this.menuId = menuId;
   }
 
-
   public String getMenuName() {
     return menuName;
   }
@@ -26,7 +25,6 @@ public class Menu {
     this.menuName = menuName;
   }
 
-
   public String getUrl() {
     return url;
   }
@@ -34,7 +32,6 @@ public class Menu {
   public void setUrl(String url) {
     this.url = url;
   }
-
 
   public String getOperate() {
     return operate;

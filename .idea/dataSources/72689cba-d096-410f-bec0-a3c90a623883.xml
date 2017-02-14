@@ -165,67 +165,72 @@
       <SequenceIdentity>1</SequenceIdentity>
     </column>
     <column id="46" parent="14" name="menuList">
-      <Position>2</Position>
-      <DataType>varchar(500)|0</DataType>
-    </column>
-    <column id="47" parent="14" name="description">
       <Position>3</Position>
       <DataType>varchar(500)|0</DataType>
     </column>
-    <column id="48" parent="14" name="createTime">
+    <column id="47" parent="14" name="description">
       <Position>4</Position>
+      <DataType>varchar(500)|0</DataType>
+    </column>
+    <column id="48" parent="14" name="createTime">
+      <Position>5</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
     </column>
     <column id="49" parent="14" name="updateTime">
-      <Position>5</Position>
-      <DataType>timestamp|0</DataType>
-      <NotNull>1</NotNull>
-      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
-    </column>
-    <key id="50" parent="14" name="PRIMARY">
-      <ColNames>limitId</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="51" parent="15" name="roleId">
-      <Position>1</Position>
-      <DataType>int(11)|0</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
-    </column>
-    <column id="52" parent="15" name="roleName">
-      <Position>2</Position>
-      <DataType>varchar(50)|0</DataType>
-    </column>
-    <column id="53" parent="15" name="description">
-      <Position>3</Position>
-      <DataType>varchar(500)|0</DataType>
-    </column>
-    <column id="54" parent="15" name="limitId">
-      <Position>4</Position>
-      <DataType>int(11)|0</DataType>
-    </column>
-    <column id="55" parent="15" name="createTime">
-      <Position>5</Position>
-      <DataType>timestamp|0</DataType>
-      <NotNull>1</NotNull>
-      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
-    </column>
-    <column id="56" parent="15" name="updateTime">
       <Position>6</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
     </column>
-    <index id="57" parent="15" name="user_role_user_limit_limitId_fk">
+    <column id="50" parent="14" name="limitName">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="51" parent="14" name="PRIMARY">
+      <ColNames>limitId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="52" parent="15" name="roleId">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="53" parent="15" name="roleName">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="54" parent="15" name="description">
+      <Position>3</Position>
+      <DataType>varchar(500)|0</DataType>
+    </column>
+    <column id="55" parent="15" name="limitId">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="56" parent="15" name="createTime">
+      <Position>5</Position>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <column id="57" parent="15" name="updateTime">
+      <Position>6</Position>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <index id="58" parent="15" name="user_role_user_limit_limitId_fk">
       <ColNames>limitId</ColNames>
     </index>
-    <key id="58" parent="15" name="PRIMARY">
+    <key id="59" parent="15" name="PRIMARY">
       <ColNames>roleId</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="59" parent="15" name="user_role_user_limit_limitId_fk">
+    <foreign-key id="60" parent="15" name="user_role_user_limit_limitId_fk">
       <ColNames>limitId</ColNames>
       <RefSchemaName>milu_crm</RefSchemaName>
       <RefTableName>user_limit</RefTableName>

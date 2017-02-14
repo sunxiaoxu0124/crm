@@ -1,12 +1,12 @@
 package com.milu.crm.pojo;
 
-
+import org.apache.ibatis.type.Alias;
+@Alias("UserGroup")
 public class UserGroup {
 
   private long groupId;
   private String groupName;
   private String description;
-
 
   public long getGroupId() {
     return groupId;
@@ -16,7 +16,6 @@ public class UserGroup {
     this.groupId = groupId;
   }
 
-
   public String getGroupName() {
     return groupName;
   }
@@ -24,7 +23,6 @@ public class UserGroup {
   public void setGroupName(String groupName) {
     this.groupName = groupName;
   }
-
 
   public String getDescription() {
     return description;

@@ -1,13 +1,13 @@
 package com.milu.crm.pojo;
 
-
+import org.apache.ibatis.type.Alias;
+@Alias("UserRole")
 public class UserRole {
 
   private long roleId;
   private String roleName;
   private String description;
   private long limitId;
-
 
   public long getRoleId() {
     return roleId;
@@ -17,7 +17,6 @@ public class UserRole {
     this.roleId = roleId;
   }
 
-
   public String getRoleName() {
     return roleName;
   }
@@ -26,7 +25,6 @@ public class UserRole {
     this.roleName = roleName;
   }
 
-
   public String getDescription() {
     return description;
   }
@@ -34,7 +32,6 @@ public class UserRole {
   public void setDescription(String description) {
     this.description = description;
   }
-
 
   public long getLimitId() {
     return limitId;
