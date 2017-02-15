@@ -3,6 +3,7 @@ package com.milu.crm.pojo;
 import org.apache.ibatis.type.Alias;
 import org.springframework.stereotype.Component;
 
+@Component
 public class User {
 
   private long userId;
