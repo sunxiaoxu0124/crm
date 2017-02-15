@@ -1,12 +1,11 @@
 package com.milu.crm.pojo;
 
-import org.apache.ibatis.type.Alias;
-@Alias("UserGroup")
 public class UserGroup {
 
   private long groupId;
   private String groupName;
   private String description;
+  private long parentGroupId;
 
   public long getGroupId() {
     return groupId;
@@ -32,4 +31,16 @@ public class UserGroup {
     this.description = description;
   }
 
+  public long getParentGroupId() {
+    return parentGroupId;
+  }
+
+  public void setParentGroupId(long parentGroupId) {
+    this.parentGroupId = parentGroupId;
+  }
+
+  @Override
+  public String toString() {
+    return "{id:" + groupId + ", name:'" + groupName + "', pId:" + parentGroupId + ",open:true}";
+  }
 }
