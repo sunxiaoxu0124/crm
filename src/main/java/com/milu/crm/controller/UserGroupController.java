@@ -21,6 +21,7 @@ public class UserGroupController {
     @Autowired
     IUserGroupService userGroupService;
 
+
     @RequestMapping("/list")
     @ResponseBody
     public String getGroupList() {
